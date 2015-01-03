@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories_array">
+        <item>@string/choose_category</item>
+        
+        <item>@string/biking_road</item>
+        <item>@string/biking</item>
+        <item>@string/tennis</item>
+        <item>@string/soccer</item>
+        <item>@string/basketball</item>
+        <item>@string/volleyball</item>
+        <item>@string/spinning</item>
+        <item>@string/crossfit</item>
+        <item>@string/jogging</item>
+    </string-array>
+    
+    <string-array name="notification_times_first_array">
+        <item>@string/no_first_notification</item>
+        <item>@string/on_time</item>
+        <item>@string/one_minute_before</item>
+        <item>@string/five_minutes_before</item>
+        <item>@string/ten_minutes_before</item>
+        <item>@string/fifteen_minutes_before</item>
+        <item>@string/twenty_minutes_before</item>
+        <item>@string/thirty_minutes_before</item>
+        <item>@string/fourtyfive_minutes_before</item>
+        <item>@string/one_hour_before</item>
+        <item>@string/two_hours_before</item>
+        <item>@string/three_hours_before</item>
+        <item>@string/twelve_hours_before</item>
+        <item>@string/one_day_before</item>
+        <item>@string/two_days_before</item>
+        <item>@string/three_days_before</item>
+        <item>@string/one_week_before</item>
+    </string-array>
+    
+     <string-array name="notification_times_second_array">
+        <item>@string/no_second_notification</item>
+        <item>@string/on_time</item>
+        <item>@string/one_minute_before</item>
+        <item>@string/five_minutes_before</item>
+        <item>@string/ten_minutes_before</item>
+        <item>@string/fifteen_minutes_before</item>
+        <item>@string/twenty_minutes_before</item>
+        <item>@string/thirty_minutes_before</item>
+        <item>@string/fourtyfive_minutes_before</item>
+        <item>@string/one_hour_before</item>
+        <item>@string/two_hours_before</item>
+        <item>@string/three_hours_before</item>
+        <item>@string/twelve_hours_before</item>
+        <item>@string/one_day_before</item>
+        <item>@string/two_days_before</item>
+        <item>@string/three_days_before</item>
+        <item>@string/one_week_before</item>
+    </string-array>
+</resources>

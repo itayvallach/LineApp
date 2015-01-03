@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary_color"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="end"
+        android:orientation="vertical" >
+
+        <com.parse.lineapp.utils.CustomAutoCompleteTextView
+            android:id="@+id/atv_places"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_atv_places"
+            android:singleLine="true" />
+
+        <Spinner
+            android:id="@+id/CategorySpinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:entries="@array/categories_array" >
+        </Spinner>
+
+        <RelativeLayout
+            android:id="@+id/DatePickerRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/EditTextDate"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:focusableInTouchMode="false"
+                android:hint="@string/pick_date"
+                android:onClick="showDatePickerDialog" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_toEndOf="@+id/EditTextDate"
+                android:layout_toRightOf="@+id/EditTextDate"
+                android:text="@string/date"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/StartTimePickerRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/EditTextStartTime"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:focusableInTouchMode="false"
+                android:hint="@string/pick_start_time"
+                android:onClick="showStartTimePickerDialog" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_toEndOf="@+id/EditTextStartTime"
+                android:layout_toRightOf="@+id/EditTextStartTime"
+                android:text="@string/start_time"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/EndTimePickerRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/EditTextEndTime"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:focusableInTouchMode="false"
+                android:hint="@string/pick_end_time"
+                android:onClick="showEndTimePickerDialog" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_toEndOf="@+id/EditTextEndTime"
+                android:layout_toRightOf="@+id/EditTextEndTime"
+                android:text="@string/end_time"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/EditTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusableInTouchMode="false"
+            android:hint="@string/event_description"
+            android:inputType="textMultiLine"
+            android:lines="2" >
+        </EditText>
+
+        <RelativeLayout
+            android:id="@+id/PatricipantsPickerRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" >
+
+            <EditText
+                android:id="@+id/EditTextNumOfParticipants"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:focusableInTouchMode="false"
+                android:hint="2"
+                android:onClick="showParticipantsPickerDialog" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_toEndOf="@+id/EditTextNumOfParticipants"
+                android:layout_toRightOf="@+id/EditTextNumOfParticipants"
+                android:text="@string/num_of_participants"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/PricePickerRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" >
+
+            <EditText
+                android:id="@+id/EditTextPrice"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:focusableInTouchMode="false"
+                android:hint="@string/free"
+                android:onClick="showPricePickerDialog" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_toEndOf="@+id/EditTextPrice"
+                android:layout_toRightOf="@+id/EditTextPrice"
+                android:text="@string/price"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_line" />
+            "
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/notifications_explaination"
+            android:textSize="18dp" />
+
+        <Spinner
+            android:id="@+id/FirstNotificationSpinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:entries="@array/notification_times_first_array" >
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/SecondNotificationSpinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:entries="@array/notification_times_second_array" >
+        </Spinner>
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:onClick="launchContactsPicker"
+            android:text="@string/invite_friends_button"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:id="@+id/listContainer"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+
+            <ListView
+                android:id="@+id/selectedContactsList"
+                android:layout_width="match_parent"
+                android:layout_height="160dp" >
+            </ListView>
+        </RelativeLayout>
+
+        
+        
+        <Button
+            android:id="@+id/finish_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/finish_creating_event"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</ScrollView>

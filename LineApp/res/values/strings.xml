@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LineApp</string>
+    <string name="hello">Login</string>
+    <string name="facebook_app_id">290343937822977</string>
+    
+    
+    <!-- Action Bar Titles -->
+	<string name="new_event_title">פעילות חדשה</string>
+	<string name="choose_contacts">הזמן חברים</string>
+	
+	
+    <!-- Categories -->
+    <string name="choose_category">בחר סוג פעילות:</string>
+    <string name="trx">אימון טי אר אקס</string>
+    <string name="biking_road">אופניים - כביש</string>
+    <string name="biking">אופניים - שטח</string>
+    <string name="tennis">טניס</string>
+    <string name="soccer">כדורגל</string>
+    <string name="basketball">כדורסל</string>
+    <string name="volleyball">כדורעף</string>
+    <string name="spinning">ספינינג</string>
+    <string name="crossfit">קרוספיט</string>
+    <string name="jogging">ריצה</string>
+    <string name="event_description">תיאור חופשי של האירוע. לדוגמא: גילאים, רמת קושי, וכל דבר אחר שבא לך לספר למתעניינים. </string>
+    <string name="new_activity">יצירת אירוע חדש</string>
+
+    <!-- Notifications -->
+    <string name="notifications_explaination">באפשרותך לשלוח עד 2 תזכורות לכל האנשים הרשומים לאירוע:</string>
+    <string name="on_time">בזמן</string>
+    <string name="one_minute_before">דקה לפני</string>
+    <string name="five_minutes_before">5 דקות לפני</string>
+    <string name="ten_minutes_before">10 דקות לפני</string>
+    <string name="fifteen_minutes_before">15 דקות לפני</string>
+    <string name="twenty_minutes_before">20 דקות לפני</string>
+    <string name="twentyfive_minutes_before">25 דקות לפני</string>
+    <string name="thirty_minutes_before">חצי שעה לפני</string>
+    <string name="fourtyfive_minutes_before">45 דקות לפני</string>
+    <string name="one_hour_before">שעה לפני</string>
+    <string name="two_hours_before">שעתיים לפני</string>
+    <string name="three_hours_before">3 שעות לפני</string>
+    <string name="twelve_hours_before">12 שעות לפני</string>
+    <string name="one_day_before">יום אחד לפני</string>
+    <string name="two_days_before">יומיים לפני</string>
+    <string name="three_days_before">3 ימים לפני</string>
+    <string name="one_week_before">שבוע לפני</string>
+    <string name="no_second_notification">ללא התראה שנייה</string>
+    <string name="no_first_notification">ללא התראה ראשונה</string>
+    
+    
+    <!-- New Event -->
+    <string name="date">תאריך:</string>
+    <string name="start_time">שעת התחלה:</string>
+    <string name="end_time">שעת סיום:</string>
+    <string name="pick_date">בחר תאריך</string>
+    <string name="pick_start_time">בחר שעת התחלה</string>
+    <string name="pick_end_time">בחר שעת סיום</string>
+    <string name="num_of_participants">מס\' משתתפים:</string>
+    <string name="price">מחיר:</string>
+    <string name="free">חינם</string>
+    <string name="coin">ש"ח</string>
+    <string name="num_of_participants_dialog_title">משתתפים</string>
+    <string name="str_atv_places">הכנס כתובת</string>
+    <string name="confirm">אישור</string>
+    <string name="invite_friends_button">הזמן חברים!</string>
+    <string name="finish_creating_event">סיום</string>
+    <string name="event_created_toast">האירוע נוצר בהצלחה!</string>
+    
+    <!-- Contacts Picker Activity -->
+    <string name="search_contact_hint">חפש...</string>
+    <string name="search_contact_done">אישור</string>
+    <string name="please_wait">אנא המתן</string>
+    <string name="loading_contacts">טוען אנשי קשר...</string>
+    <string name="got_it">הבנתי!</string>
+    <string name="contacts_picker_explanation_dialog">סמן את אנשי הקשר אליהם תישלח הודעת SMS שתזמין אותם להיכנס לאפליקציה ולהירשם לאירוע. שימ\\י לב כי ההודעות יישלחו ממספרך ובהתאם לתנאים הקיימים אצל ספק הסלולר שלך.</string>
+ 	<string name="explanation_dialog_title">שים לב!</string>
+ 	
+ 	<!-- Cell -->
+ 	<string name="out_of">מתוך</string>
+ 	
+</resources>
