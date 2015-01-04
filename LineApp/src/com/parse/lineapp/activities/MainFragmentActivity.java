@@ -34,8 +34,8 @@ public class MainFragmentActivity extends FragmentActivity {
                 });
         Tab.setAdapter(TabAdapter);
         actionBar = getActionBar();
-        actionBar.setDisplayShowHomeEnabled(false);
-        actionBar.setDisplayShowTitleEnabled(false);
+//        actionBar.setDisplayShowHomeEnabled(false);
+//        actionBar.setDisplayShowTitleEnabled(false);
         //Enable Tabs on Action Bar
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         ActionBar.TabListener tabListener = new ActionBar.TabListener(){

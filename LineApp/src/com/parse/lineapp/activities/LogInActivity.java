@@ -9,13 +9,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.parse.LogInCallback;
 import com.parse.ParseAnalytics;
 import com.parse.ParseFacebookUtils;
 import com.parse.ParseFacebookUtils.Permissions;
-
 import com.parse.ParseUser;
 import com.parse.ParseException;
 import com.parse.lineapp.R;
@@ -26,6 +26,7 @@ public class LogInActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		final Intent intent = new Intent(this, MainFragmentActivity.class);
+		
 		// Check if there is a currently logged in user
 	    // and they are linked to a Facebook account.
 	    ParseUser currentUser = ParseUser.getCurrentUser();
@@ -34,9 +35,9 @@ public class LogInActivity extends Activity {
 	    	startActivity(intent);
 	    }
 		setContentView(R.layout.main);
-		TextView loginText = (TextView) findViewById(R.id.login);
+		ImageView loginBtn = (ImageView) findViewById(R.id.fb_login_btn);
 		mActivity = this;
-		loginText.setOnClickListener(new OnClickListener() {
+		loginBtn.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View arg0) {
