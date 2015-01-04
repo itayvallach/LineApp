@@ -20,11 +20,19 @@ import com.parse.ParseUser;
 import com.parse.ParseException;
 import com.parse.lineapp.R;
 
-public class WelcomeActivity extends Activity {
+public class LogInActivity extends Activity {
 
 	Activity mActivity;
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		final Intent intent = new Intent(this, MainFragmentActivity.class);
+		// Check if there is a currently logged in user
+	    // and they are linked to a Facebook account.
+	    ParseUser currentUser = ParseUser.getCurrentUser();
+	    if ((currentUser != null) && ParseFacebookUtils.isLinked(currentUser)) {
+	        // Go to the user info activity
+	    	startActivity(intent);
+	    }
 		setContentView(R.layout.main);
 		TextView loginText = (TextView) findViewById(R.id.login);
 		mActivity = this;
@@ -32,7 +40,7 @@ public class WelcomeActivity extends Activity {
 
 			@Override
 			public void onClick(View arg0) {
-				final Intent intent = new Intent(mActivity, MainFragmentActivity.class);
+				
 				List<String> permissions = Arrays.asList("public_profile", "user_friends");
 				ParseFacebookUtils.logIn(permissions, mActivity, new LogInCallback() {
 					@Override
